@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <img id="off_image" src="./off.png" alt="">
+    <img id="on_image" src="./on.png" alt="" style="display: none;">
+
+    <button id="btn" onclick="on_bulb()">ON</button>
+    <button id="btn" onclick="off_bulb()">OFF</button>
+
+
+
+    <script>
+
+
+        function on_bulb() {
+            let off_image = document.getElementById("off_image");
+            let on_image = document.getElementById("on_image");
+
+            on_image.style.setProperty("display","block")
+            off_image.style.setProperty("display","none")
+
+              // myimage.setAttribute('src',"./on.png")
+        }
+
+        function off_bulb() {
+            // let myimage=document.getElementById("image");
+            // myimage.setAttribute('src',"./off.png")
+
+
+               let off_image = document.getElementById("off_image");
+            let on_image = document.getElementById("on_image");
+            
+            on_image.style.setProperty("display","none")
+            off_image.style.setProperty("display","block")
+        }
+    </script>
+</body>
+
+</html>
